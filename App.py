@@ -259,7 +259,7 @@ def run():
 
                 ## Showing Analyzed data from (resume_data)
                 st.header("**Resume Analysis 🤘**")
-                st.success("Hello "+ resume_data['name'])
+                st.success("Hello " + str(resume_data.get('name', 'User')))
                 st.subheader("**Your Basic info 👀**")
                 try:
                     st.text('Name: '+resume_data['name'])
