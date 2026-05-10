@@ -13,3 +13,4 @@ streamlit-tags
 docx2txt
 GitPython
 geocoder
+geopy
