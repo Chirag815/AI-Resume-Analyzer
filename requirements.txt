@@ -3,7 +3,7 @@ pandas
 numpy
 nltk
 spacy==2.3.8
-pyresparser
+
 pdfminer.six
 pymysql
 Pillow
