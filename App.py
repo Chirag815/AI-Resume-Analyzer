@@ -34,7 +34,7 @@ nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 
-from pyresparser import ResumeParser
+ 
 
 
 ###### Preprocessing functions ######
@@ -257,7 +257,15 @@ def run():
             show_pdf(save_image_path)
 
             ### parsing and extracting whole resume 
-            resume_data = ResumeParser(save_image_path).get_extracted_data()
+            resume_data = {
+                
+                'name': 'User',
+                'email': '',
+                'mobile_number': '',
+                'degree': '',
+                'no_of_pages': 1,
+                'skills': []
+            }
             if resume_data:
                 
                 ## Get the whole resume data into resume_text
